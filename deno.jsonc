@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "fmt": "deno fmt ./**/*.ts",
+    "fmt:check": "deno fmt --check ./**/*.ts",
+    "check": "deno check ./**/*.ts",
+    "lint": "deno lint ./**/*.ts",
+    "serve": "deno run --allow-net --allow-read --allow-write --allow-run https://deno.land/x/denoliver/mod.ts -p 8888",
+    "dev": "deno run -A mod.ts",
+    "dev:watch": "deno run -A --unstable mod.ts --watch=mod.ts"
+  }
+}
